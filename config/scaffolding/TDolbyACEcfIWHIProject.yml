@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/trevor-dolby-at-ibm-com
   gitUsername: trevor-dolby-at-ibm-com
   gitBranch: main
+services:
+- serviceName: project.tdolbyacecfiwhi.integrations:DeployAnywhereFlowService
+  packages:
+  - name: TDolbyACEcfIWHIProject
+    version: "1.0"
+- serviceName: pub.string:concat
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2064
